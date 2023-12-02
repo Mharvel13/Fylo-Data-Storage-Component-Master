@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 55vh;
+}
+header {
+    height: 45vh;
+}
+
+.logo-section{
+    border-top-right-radius: 80px;
+}
