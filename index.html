@@ -1,90 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    </head>
+    <title>Frontend Mentor | Fylo data storage component</title>
+</head>
 
-    <body>
-        <header class="bg-Very-Dark-Blue"></header>
-        <main
-            class="bg-wavy-pattern-desktop bg-no-repeat bg-cover bg-Very-Dark-Blue"
-        >
-            <!-- class=" bg-wavy-pattern-desktop bg-no-repeat bg-Very-Dark-Blue" -->
+<body>
+    <section class="p-36 bg-Very-Dark-Blue hidden md:block top"></section>
 
-            <div
-                class="flex flex-row justify-center items-end flex-wrap relative bottom-28"
-            >
-                <section
-                    class="bg-Dark-Blue p-4 flex flex-col justify-center w-1/5 mx-8 logo-section"
-                >
-                    <img src="images/logo.svg" alt="logo" class="w-1/2 mx-2 my-6" />
+    <main class="bg-wavy-pattern-mobile bg-no-repeat bg-cover md:bg-wavy-pattern-desktop md:bg-Very-Dark-Blue">
+        <section class="flex flex-col items-center md:flex-row md:justify-center md:items-end md:relative md:bottom-20">
+            <section class="bg-Dark-Blue w-10/12 mt-48 md:m-0 mb-10 p-4 md:w-1/5 md:mx-8 logo-section rounded-md">
+                <img src="images/logo.svg" alt="logo" class="md:w-1/2 w-3/6 m-2" />
 
-                    <div class="flex justify-start items-center">
-                        <div class="p-2 m-2 bg-Very-Dark-Blue rounded-md">
-                            <img
-                                src="images/icon-document.svg"
-                                alt="icon-document"
-                            />
-                        </div>
-                        <div class="p-2 m-2 bg-Very-Dark-Blue rounded-md">
-                            <img
-                                src="images/icon-folder.svg"
-                                alt="icon-folder"
-                            />
-                        </div>
-                        <div class="p-2 m-2 bg-Very-Dark-Blue rounded-md">
-                            <img
-                                src="images/icon-upload.svg"
-                                alt="icon-upload"
-                            />
-                        </div>
+                <div class="flex justify-start items-center">
+                    <div class="p-2 mx-2 my-4 bg-Very-Dark-Blue rounded-md">
+                        <img src="images/icon-document.svg" alt="icon-document" class="w-5" />
                     </div>
-                </section>
-
-                <section class="bg-Dark-Blue text-white px-8 py-8 rounded-md w-2/5">
-                    <p class="text-md text-gray-300 font-light">You’ve used <span class="text-white font-bold"> 815 GB</span> of your storage</p>
-
-                    <div class="bg-Very-Dark-Blue rounded-xl my-2 w-full h-3">
-                        <div class="bg-red-400 rounded-xl w-5/6 h-3 relative flex justify-end items-end">
-                            <div class="bg-white w-3 rounded-3xl h-3"></div>
-                        </div>
+                    <div class="p-2 mx-2 my-4 bg-Very-Dark-Blue rounded-md">
+                        <img src="images/icon-folder.svg" alt="icon-folder" class="w-6" />
                     </div>
-                    <div class="flex justify-between m-0 text-xs font-bold">
-                        <p>0 GB</p>
-                        <p>1000 GB</p>
+                    <div class="p-2 mx-2 my-4 bg-Very-Dark-Blue rounded-md">
+                        <img src="images/icon-upload.svg" alt="icon-upload" class="w-6" />
                     </div>
-                </section>
-                <div class="bg-white p-4 m-4 rounded-lg relative right-44  bottom-20">
-                    <p class="font-bold text-3xl">
-                        185
-                        <span class="text-gray-300 font-light text-sm">
-                        GB Left
-                        </span>
-                    </p>
                 </div>
-            </div>
-        </main>
+            </section>
 
-        <!-- <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div> -->
-    </body>
+            <section class="bg-Dark-Blue text-white px-8 py-8 w-10/12 rounded-md md:w-2/5">
+                <p class="text-md text-gray-300 font-light">
+                    You’ve used
+                    <span class="text-white font-bold"> 815 GB</span> of
+                    your storage
+                </p>
+
+                <div class="bg-Very-Dark-Blue rounded-xl my-2 w-full h-3">
+                    <div class="bg-red-400 rounded-xl w-5/6 h-3 relative flex justify-end items-end">
+                        <div class="bg-white w-3 rounded-3xl h-3"></div>
+                    </div>
+                </div>
+                <div class="flex justify-between text-xs font-bold">
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
+            </section>
+
+            <div class="bg-white p-3 rounded-lg relative bottom-8 w-fit md:bottom-24 md:right-44">
+                <p class="font-bold text-4xl flex justify-between items-center">
+                    185
+                    <span class="ml-3 text-gray-600 text-sm"> GB Left</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
 </html>
